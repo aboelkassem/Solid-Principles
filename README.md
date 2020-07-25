@@ -19,16 +19,16 @@ it is a mnemonic acronym. It helps to define the five basic object-oriented desi
 
 ### Examples of responsibilities of the application
 <img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/responsiblities.png"/>
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/Voilatiing-Single-Responsibility-Principle.png" width="1000"/>
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/Voilatiing-Single-Responsibility-Principle.png" width="100%"/>
 
 ### Example 1 for <a href="https://github.com/ardalis/SolidSample/tree/SRP-START">the code here</a>:
 Finding Responsibilities in one class that make the code difficult and longer to test one responsibility in isolation
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-pro.png" width="470" height ="350"/>
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-pro-2.png" width="470"  height ="350"/>
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-pro.png" width="50%" height ="350"/>
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-pro-2.png" width="49%" height ="350"/>
 Solution after making them in different classes that now are easily tested
 <img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-solu.png"/>
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-solu-2.png" width="470" height ="350"/>
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-solu-3.png" width="470" height ="350"/>
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-solu-2.png" width="50%" height ="350"/>
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ex2-solu-3.png" width="49%" height ="350"/>
 
 ### Example 2:
 - Problem:
