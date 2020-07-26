@@ -80,9 +80,9 @@ public class DoOneThing
 	}
 }
 ```
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ocp-parameter.png" width="32%" height ="250"/>
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ocp-inherit.png" width="32%" height ="250"/>
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ocp-inject.png" width="32%" height ="250"/>
+| Parameters | Inheritance | Composition/ Injection |
+| ------------- | ------------- | ------------- |
+![](https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ocp-parameter.png)  |  ![](https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ocp-inherit.png) | ![](https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ocp-inject.png)
 
 ### Example OCP in Packages and Libraries in NuGet or NPM
 using extension methods in C# like [this example](https://github.com/ardalis/guardclauses)
