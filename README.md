@@ -133,3 +133,28 @@ foreach(var employee in employees)
 	- Null Object Design Pattern
 - Follow ISP and be sure to fully implement interfaces
 
+## Interface Segregation Principle (ISP)
+- uncle bob said "Clients should not be forced to depend on methods they do not use"
+- Many client-specific interfaces are better than one general-purpose interface.
+    - avoid fat interface so prefer small
+- Client must not implement unnecessary methods
+
+> The Interface in ISP mean c# **interface** type/keyword.. 
+a type's interface in this context is whatever can be accessed by client code working with an instance of that type
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp.png"/>
+
+### Detecting ISP Violations in your code
+- Large Interfaces
+- NotImplementedException
+- Code uses just small subset of a larger interface
+
+### Fixing ISP Violations
+- Split interface Up into smaller ones and if you need use multiple interface inheritance
+
+### Example 1
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex1.png"/>
+
+### Example 2
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2.png"/>
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2-1.png" align="left" width="48%"/>
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2-2.png" align="right" width="48%"/>
