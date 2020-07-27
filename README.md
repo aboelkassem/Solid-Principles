@@ -156,5 +156,9 @@ a type's interface in this context is whatever can be accessed by client code wo
 
 ### Example 2
 <img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2.png"/>
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2-1.png" align="left" width="48%"/>
-<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2-2.png" align="right" width="48%"/>
+<p align="left">
+   <img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2-1.png" width="48%"/>
+</p>
+<p align="right">
+   <img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2-2.png" width="48%"/>
+</p>
