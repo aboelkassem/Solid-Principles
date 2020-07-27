@@ -88,3 +88,48 @@ public class DoOneThing
 using extension methods in C# like [this example](https://github.com/ardalis/guardclauses)
 <img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/ocp-packages.png"/>
 
+
+## Liskov Substitution Principle (LSP)
+- if you have class **B** inherit from class **A** then class **A** should be replaceable by class **B** without any changes/ problems
+- LSP Is a Subset of Polymorphism
+<img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/lsp.png"/>
+
+### How to Apply LSP
+- Make the method in base class is **virtual**
+- to override this method while used in derived class when create object
+
+### Detecting LSP Violations in your code
+- Type Checking with **is** or **as** in polymorphic code
+```csharp
+foreach(var employee in employees)
+{
+   if(employee is Manager)
+   {
+     Helpers.PrintManager(employee as Manager);
+     break;
+   }
+   Helpers.PrintEmployee(employee);
+}
+```
+- null checks
+```csharp
+foreach(var employee in employees)
+{
+   if(employee == null)
+   {
+     Console.WriteLine("Employee not found.");
+     break;
+   }
+   Helpers.PrintEmployee(employee);
+}
+```
+- NotImplementException in interface implementation 
+
+### Detecting LSP Violations in your code
+- Follow the <a href="https://martinfowler.com/bliki/TellDontAsk.html">"Tell, Don't Ask"</a> Principle
+- Minimize null checks with
+	- c# features
+	- Guard clauses
+	- Null Object Design Pattern
+- Follow ISP and be sure to fully implement interfaces
+
