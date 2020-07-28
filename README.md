@@ -160,3 +160,31 @@ a type's interface in this context is whatever can be accessed by client code wo
   <img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2-1.png" width="49%" height ="50%"/>
   <img src="https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/isp-ex2-2.png" width="49%" height ="50%"/> 
 </p>
+
+## Dependency Inversion Principle (DIP)
+
+- High Level Modules should not depend upon Low Level Modules. Both should depend upon abstractions.
+    - abstractions should not depend on details
+    - details should depend on abstractions
+    ![](https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/dpi.png)
+- Applying this principle would make your code loosely coupling and highly cohesive (don't depend on low level classes)
+- **High level Module** is the module has business rules, more abstract, process-oriented, further from (I/O) while **Low Level Module** is closer to (I/O) and interacts with specific external systems and hardware (keep plumbing code separate from high level business logic)
+- **Low Level Dependencies** like **Database, File system, Email, Web APIs, Configuration** and **Clock**
+- This principle name "Dependency Inversion" for studying in a book , but in actual coding called "dependency injection" like in [asp.net](http://asp.net) core that is completely depend on it and follow it
+- **dependency injection (DI)** say don't create your own dependencies instead you should depend on abstractions and request that dependencies from client. there are three method on how to apply that
+    - Constructor arguments (Prefer one because it's follow [explicit dependencies principle](https://docs.microsoft.com/en-us/dotnet/architecture/modern-web-apps-azure/architectural-principles))
+    - Properties injection
+    - Method Constructor
+- Like this design/problem that causes pain like tight coupling, low cohesive, difficult to isolate and unit test and duplicate the code
+    ![](https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/dpi-ex1.png)
+- but the solution would be :
+    ![](https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/dpi-ex1-sol.png)
+    ![](https://github.com/aboelkassem/Solid-Principles/blob/master/Screenshots/dpi-dep.png)
+
+## Organizing and extending SOLID Principles into your project
+cause following all these principles would need to many files that focus in more classes and interfaces so do the following technique for avoid that problem by
+- **Use Folders!**
+    - several folders with each folder has few classes/interfaces
+    - each folder should be specific in it's task by naming them appropriately, it should be pretty easy to find what you're looking
+    - default way is by **kind of thing the file** is, so might put controllers in one folder, models in another, folder for interfaces and another for services ... etc
+    - another way specially when app is grow, is to use **feature folders** by organize your app with feature not kind of thing like in online store might have top-level folders for catalog, search and cart instead of controllers, models, views and services...... also follow [this repo](https://github.com/ardalis/CleanArchitecture)
